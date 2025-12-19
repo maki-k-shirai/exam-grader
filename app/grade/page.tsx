@@ -21,7 +21,9 @@ type Result = {
 }
 
 function downloadText(filename: string, text: string) {
-  const blob = new Blob([text], { type: "text/csv;charset=utf-8" })
+  // Excel対策：UTF-8 BOM を先頭につける
+  const bom = "\uFEFF"
+  const blob = new Blob([bom + text], { type: "text/csv;charset=utf-8" })
   const url = URL.createObjectURL(blob)
   const a = document.createElement("a")
   a.href = url
