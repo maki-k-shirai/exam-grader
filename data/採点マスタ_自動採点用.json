@@ -1,0 +1,894 @@
+{
+  "exam": {
+    "name": "令和6年基準（暫定）社内一斉テスト",
+    "date": "2025-12-19",
+    "duration_minutes": 90
+  },
+  "answer_key": {
+    "source": "テスト採点ポイント.xlsx",
+    "answer_files": {
+      "貸借対照表": "貸借対照表.xlsx",
+      "活動計算書": "活動計算書.xlsx",
+      "会計区分別内訳": "会計区分別内訳.xlsx",
+      "財源区分別内訳": "財源区分別内訳.xlsx",
+      "事業費・管理費の形態別区分": "事業費・管理費の形態別区分.xlsx"
+    },
+    "default_rules": {
+      "sheet_policy": "first_sheet",
+      "compare_type": "auto",
+      "tolerance": {
+        "mode": "abs",
+        "value": 0
+      },
+      "normalize": [
+        "trim",
+        "zen2han",
+        "comma_remove",
+        "blank_to_zero"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": 1,
+      "report": "貸借対照表",
+      "check_label": "現金預金-金額",
+      "cell": "B9",
+      "expected": 8000000,
+      "points": 2,
+      "note": "・タテの組み換え（振替入力１・２）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "report": "貸借対照表",
+      "check_label": "現金預金-金額",
+      "cell": "B10",
+      "expected": 20000000,
+      "points": 2,
+      "note": "・タテの組み換え（振替入力１・２）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "report": "貸借対照表",
+      "check_label": "現金預金-金額",
+      "cell": "B11",
+      "expected": 180000000,
+      "points": 3,
+      "note": "・タテの組み換え（振替入力１・２）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 4,
+      "report": "貸借対照表",
+      "check_label": "長期性預金-金額",
+      "cell": "B30",
+      "expected": 50000000,
+      "points": 3,
+      "note": "・タテの組み換え（振替入力１・２）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 5,
+      "report": "貸借対照表",
+      "check_label": "長期性預金-金額",
+      "cell": "B31",
+      "expected": 160000000,
+      "points": 3,
+      "note": "・タテの組み換え（振替入力１・２）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 6,
+      "report": "貸借対照表",
+      "check_label": "長期性預金-金額",
+      "cell": "B32",
+      "expected": 283000000,
+      "points": 3,
+      "note": "・タテの組み換え（振替入力１・２）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 7,
+      "report": "貸借対照表",
+      "check_label": "投資有価証券-金額",
+      "cell": "B35",
+      "expected": 50100000,
+      "points": 2,
+      "note": "・タテの組み換え（振替入力１）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 8,
+      "report": "貸借対照表",
+      "check_label": "指定純資産-金額",
+      "cell": "B56",
+      "expected": 1075100000,
+      "points": 2,
+      "note": "・タテの組み換え（振替入力5・7）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 9,
+      "report": "貸借対照表",
+      "check_label": "一般純資産-金額",
+      "cell": "B57",
+      "expected": 463311000,
+      "points": 2,
+      "note": "・タテの組み換え（振替入力5・7）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 10,
+      "report": "貸借対照表",
+      "check_label": "その他有価証券評価差額金-金額",
+      "cell": "B58",
+      "expected": 120000,
+      "points": 2,
+      "note": "・タテの組み換え（振替入力5・7）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 11,
+      "report": "貸借対照表",
+      "check_label": "うち指定純資産に係る～-金額",
+      "cell": "B59",
+      "expected": 100000,
+      "points": 3,
+      "note": "・タテの組み換え（振替入力5・7）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 12,
+      "report": "貸借対照表",
+      "check_label": "うち一般純資産に係る～-金額",
+      "cell": "B60",
+      "expected": 20000,
+      "points": 3,
+      "note": "・タテの組み換え（振替入力5・7）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 13,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-現金預金-金額",
+      "cell": "B8",
+      "expected": 140000000,
+      "points": 2,
+      "note": "・タテの組み換えが正しく行われているか\n・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 14,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-現金預金-金額",
+      "cell": "C8",
+      "expected": 40000000,
+      "points": 2,
+      "note": "・タテの組み換えが正しく行われているか\n・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 15,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-現金預金-金額",
+      "cell": "D13",
+      "expected": 6372000,
+      "points": 2,
+      "note": "・タテの組み換えが正しく行われているか\n・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 16,
+      "report": "会計区分別内訳",
+      "check_label": "収益会計-建物-金額",
+      "cell": "B29",
+      "expected": 509636000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 17,
+      "report": "会計区分別内訳",
+      "check_label": "収益会計-建物-金額",
+      "cell": "C29",
+      "expected": 128000000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 18,
+      "report": "会計区分別内訳",
+      "check_label": "収益会計-建物-金額",
+      "cell": "D29",
+      "expected": 64000000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "report": "会計区分別内訳",
+      "check_label": "公益会計-土地-金額",
+      "cell": "B30",
+      "expected": 90000000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "report": "会計区分別内訳",
+      "check_label": "公益会計-土地-金額",
+      "cell": "C30",
+      "expected": 20000000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "report": "会計区分別内訳",
+      "check_label": "公益会計-土地-金額",
+      "cell": "D30",
+      "expected": 10000000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "report": "会計区分別内訳",
+      "check_label": "公益会計-投資有価証券-金額",
+      "cell": "B49",
+      "expected": 40080000,
+      "points": 3,
+      "note": "・タテの組み換えが正しく行われているか\n・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "report": "会計区分別内訳",
+      "check_label": "公益会計-投資有価証券-金額",
+      "cell": "D49",
+      "expected": 10020000,
+      "points": 3,
+      "note": "・タテの組み換えが正しく行われているか\n・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-退職給付引当金-金額",
+      "cell": "B82",
+      "expected": 140000000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-退職給付引当金-金額",
+      "cell": "C82",
+      "expected": 40000000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-退職給付引当金-金額",
+      "cell": "D82",
+      "expected": 20000000,
+      "points": 3,
+      "note": "・ヨコの組み換えが正しく行われているか\n・割合について資料をきちんと読み込んでいるか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 27,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-指定純資産-金額",
+      "cell": "B94",
+      "expected": 786500000,
+      "points": 2,
+      "note": "・タテの組み換えが正しく行われているか\n・ヨコの組み換えが正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 28,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-指定純資産-金額",
+      "cell": "C94",
+      "expected": 148000000,
+      "points": 2,
+      "note": "・タテの組み換えが正しく行われているか\n・ヨコの組み換えが正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "report": "会計区分別内訳",
+      "check_label": "法人会計-指定純資産-金額",
+      "cell": "D94",
+      "expected": 140600000,
+      "points": 2,
+      "note": "・タテの組み換えが正しく行われているか\n・ヨコの組み換えが正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "report": "活動計算書",
+      "check_label": "資産運用益-金額",
+      "cell": "C5",
+      "expected": 0,
+      "points": 2,
+      "note": "・タテの組み換え（No5）で誤って売買目的～に入力が行われてないか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "report": "活動計算書",
+      "check_label": "公１事業収益",
+      "cell": "A11",
+      "expected": "　　公１事業収益",
+      "points": 2,
+      "note": "・会計名略称登録が正しく行われているか\n・会計名略称対象科目登録が正しく行われているか",
+      "rule": {
+        "compare_type": "string",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "trim",
+          "zen2han"
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "report": "活動計算書",
+      "check_label": "収１事業費",
+      "cell": "A48",
+      "expected": "　　収１事業費",
+      "points": 2,
+      "note": "・会計名略称登録が正しく行われているか",
+      "rule": {
+        "compare_type": "string",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "trim",
+          "zen2han"
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "report": "活動計算書",
+      "check_label": "管理費",
+      "cell": "A49",
+      "expected": "　　他１事業費",
+      "points": 2,
+      "note": "・会計名略称登録が正しく行われているか",
+      "rule": {
+        "compare_type": "string",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "trim",
+          "zen2han"
+        ]
+      }
+    },
+    {
+      "id": 34,
+      "report": "財源区分別内訳",
+      "check_label": "公１事業費-指定",
+      "cell": "C44",
+      "expected": 6700000,
+      "points": 2,
+      "note": "・調整入力No3（一般正味～）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "report": "財源区分別内訳",
+      "check_label": "公２事業費-指定",
+      "cell": "C45",
+      "expected": 4800000,
+      "points": 2,
+      "note": "・調整入力No3（一般正味～）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "report": "財源区分別内訳",
+      "check_label": "収１事業費-指定",
+      "cell": "C48",
+      "expected": 1600000,
+      "points": 2,
+      "note": "・調整入力No3（一般正味～）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 37,
+      "report": "財源区分別内訳",
+      "check_label": "他１事業費-指定",
+      "cell": "C49",
+      "expected": 1600000,
+      "points": 2,
+      "note": "・調整入力No3（一般正味～）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 38,
+      "report": "財源区分別内訳",
+      "check_label": "管理費-指定",
+      "cell": "C50",
+      "expected": 0,
+      "points": 2,
+      "note": "・調整入力No3（一般正味～）が正しく行われているか",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 39,
+      "report": "事業費・管理費の形態別区分",
+      "check_label": "事業区分（公益・収益・法人）\n合計値",
+      "cell": "I84",
+      "expected": 294502000,
+      "points": 2,
+      "note": "・問題文がきちんと読み込んでいるか（会計全選択されているか）",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 40,
+      "report": "事業費・管理費の形態別区分",
+      "check_label": "事業区分（公益・収益・法人）\n合計値",
+      "cell": "L84",
+      "expected": 87060000,
+      "points": 2,
+      "note": "・問題文がきちんと読み込んでいるか（会計全選択されているか）",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "report": "事業費・管理費の形態別区分",
+      "check_label": "事業区分（公益・収益・法人）\n合計値",
+      "cell": "O84",
+      "expected": 41200000,
+      "points": 1,
+      "note": "・問題文がきちんと読み込んでいるか（会計全選択されているか）",
+      "rule": {
+        "compare_type": "number",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "blank_to_zero",
+          "comma_remove"
+        ]
+      }
+    },
+    {
+      "id": 42,
+      "report": "事業費・管理費の形態別区分",
+      "check_label": "役員報酬（科目名）",
+      "cell": "C4",
+      "expected": "役員報酬",
+      "points": 1,
+      "note": "・問題文がきちんと読み込んでいるか（誤って大・中レベルで出力してないか）",
+      "rule": {
+        "compare_type": "string",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "trim",
+          "zen2han"
+        ]
+      }
+    },
+    {
+      "id": 43,
+      "report": "事業費・管理費の形態別区分",
+      "check_label": "支払手数料（科目名）",
+      "cell": "C46",
+      "expected": "支払手数料",
+      "points": 1,
+      "note": "・問題文がきちんと読み込んでいるか（誤って細目１レベル以下で出力してないか（細目１以下であれば支払手数料の内訳科目がでる））",
+      "rule": {
+        "compare_type": "string",
+        "tolerance": {
+          "mode": "abs",
+          "value": 0
+        },
+        "normalize": [
+          "trim",
+          "zen2han"
+        ]
+      }
+    }
+  ],
+  "max_score": 100
+}
