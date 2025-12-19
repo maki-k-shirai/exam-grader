@@ -773,8 +773,8 @@
       "id": 38,
       "report": "財源区分別内訳",
       "check_label": "管理費-指定",
-      "cell": "C50",
-      "expected": 0,
+      "cell": "C51",
+      "expected": 1600000,
       "points": 2,
       "note": "・調整入力No3（一般正味～）が正しく行われているか",
       "rule": {
