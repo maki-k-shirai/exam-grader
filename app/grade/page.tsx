@@ -91,11 +91,36 @@ export default function GradePage() {
             {loading ? "採点中..." : "採点する"}
           </button>
 
-          {result && (
-            <div style={{ marginLeft: "auto", fontWeight: 800 }}>
-              得点：{result.total_score} / {result.max_score}
-            </div>
-          )}
+{result && (
+  <div
+    style={{
+      marginTop: 16,
+      padding: 20,
+      borderRadius: 14,
+      background: "#f7f9ff",
+      border: "2px solid #4f6ef7",
+      display: "flex",
+      alignItems: "center",
+      gap: 24,
+    }}
+  >
+    <div>
+      <div style={{ fontSize: 14, color: "#4f6ef7", fontWeight: 700 }}>
+        得点
+      </div>
+      <div style={{ fontSize: 40, fontWeight: 900, lineHeight: 1.1 }}>
+        {result.total_score}
+        <span style={{ fontSize: 18, fontWeight: 600 }}>
+          {" "} / {result.max_score}
+        </span>
+      </div>
+    </div>
+
+    <div style={{ fontSize: 14, color: "#555" }}>
+      NG件数：{ngOnly.length} 件
+    </div>
+  </div>
+)}
         </div>
 
         {error && <div style={{ marginTop: 12, color: "crimson" }}>{error}</div>}
@@ -134,7 +159,7 @@ export default function GradePage() {
             <table style={{ width: "100%", borderCollapse: "collapse", minWidth: 900 }}>
               <thead>
                 <tr style={{ background: "#f6f6f6" }}>
-                  {["帳票", "セル", "CK箇所", "期待値", "実値", "配点", "理由"].map((h) => (
+                  {["帳票", "セル", "CK箇所", "期待値", "実値", "配点"].map((h) => (
                     <th key={h} style={{ textAlign: "left", padding: 10, borderBottom: "1px solid #ddd" }}>
                       {h}
                     </th>
@@ -150,14 +175,11 @@ export default function GradePage() {
                     <td style={{ padding: 10, borderBottom: "1px solid #eee" }}>{String(d.expected ?? "")}</td>
                     <td style={{ padding: 10, borderBottom: "1px solid #eee" }}>{String(d.actual ?? "")}</td>
                     <td style={{ padding: 10, borderBottom: "1px solid #eee" }}>{d.points}</td>
-                    <td style={{ padding: 10, borderBottom: "1px solid #eee", color: "#666" }}>
-                      {d.reason === "missing_file" ? "提出ファイル不足" : ""}
-                    </td>
                   </tr>
                 ))}
                 {ngOnly.length === 0 && (
                   <tr>
-                    <td colSpan={7} style={{ padding: 14, color: "#666" }}>
+                    <td colSpan={6} style={{ padding: 14, color: "#666" }}>
                       NGはありません（満点の可能性）
                     </td>
                   </tr>
