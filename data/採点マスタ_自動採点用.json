@@ -673,8 +673,8 @@
       "id": 33,
       "report": "活動計算書",
       "check_label": "管理費",
-      "cell": "A49",
-      "expected": "　　他１事業費",
+      "cell": "A51",
+      "expected": "　　管理費",
       "points": 2,
       "note": "・会計名略称登録が正しく行われているか",
       "rule": {
